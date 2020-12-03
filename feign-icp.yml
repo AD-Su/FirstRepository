@@ -1,0 +1,36 @@
+epms-service-url: http://192.168.0.42:9301
+icpsys-service-url: http://192.168.0.42:9000
+
+
+api:
+  icpsys:
+    user:
+      get-login: /user/get-user/{loginName}
+    specialty:
+      get: /specialty/{id}
+    oumain:
+      get: /oumain/{id}
+      get-single: /oumain/single
+  epms:
+    project:
+      get-by-projectnum: /proj/project/single
+    isp:
+      project: /ispws/scm/project
+    invest-check:
+      doc-query: /ispws/invest-doc-query
+      log-query: /ispws/invest-log-query
+      cms:
+        freeze: /ispws/cms/freeze-invest-check
+        reserve: /ispws/cms/reserve-invest-check
+        adjust: /ispws/cms/adjust-invest-check
+        release: /ispws/cms/release-invest-check
+      scm:
+        freeze: /ispws/scm/freeze-invest-check
+        reserve: /ispws/scm/reserve-invest-check
+        adjust: /ispws/scm/adjust-invest-check
+        release: /ispws/scm/release-invest-check
+      lis:
+        freeze: /ispws/lis/freeze-invest-check
+        reserve: /ispws/lis/reserve-invest-check
+        adjust: /ispws/lis/adjust-invest-check
+        release: /ispws/lis/release-invest-check
